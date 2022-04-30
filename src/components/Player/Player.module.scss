@@ -1,0 +1,49 @@
+@import '../../vars.scss';
+
+.player {
+  padding: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+
+  &__title {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333333;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  &__score {
+    font-size: 80px;
+    color: $pink-color;
+    margin-bottom: 126px;
+  }
+
+  &__currentScoreBox {
+    background-color: $pink-color;
+    padding: 20px;
+    width: 208px;
+    text-align: center;
+    color: #fff;
+    border-radius: 9px;
+  }
+
+  &__currentScoreTitle {
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: #ddd;
+    font-size: 17px;
+  }
+
+  &__currentScore {
+    font-size: 35px;
+  }
+}
+
+.active {
+  background-color: $active-color;
+}
