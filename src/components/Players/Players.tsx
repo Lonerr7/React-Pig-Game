@@ -1,10 +1,9 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import { useAppSelector } from '../../hooks/hooks';
 import Player from '../Player/Player';
 import s from './Players.module.scss';
 
-const Players = () => {
-  const players = useSelector((state) => state.players.players);
+const Players: React.FC = () => {
+  const players = useAppSelector((state) => state.players.players);
 
   const elements = players.map((p) => (
     <Player

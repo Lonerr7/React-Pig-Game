@@ -1,4 +1,6 @@
-export const holdPlayerScore = (state) => {
+import { PlayersState } from '../types/types';
+
+export const holdPlayerScore = (state: PlayersState) => {
   state.players[state.activePlayer].currentScore = 0;
 
   if (state.activePlayer === 0) {

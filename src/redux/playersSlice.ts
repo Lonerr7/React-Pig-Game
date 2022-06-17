@@ -1,18 +1,21 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { holdPlayerScore } from '../helpers/helpers';
+import { PlayersState } from '../types/types';
+
+const initialState: PlayersState = {
+  players: [
+    { id: 1, score: 0, currentScore: 0, isActive: true },
+    { id: 2, score: 0, currentScore: 0, isActive: false },
+  ],
+  activePlayer: 0,
+  diceNumber: 0,
+  limit: 30,
+  isGameOver: false,
+};
 
 const playersSlice = createSlice({
   name: 'players',
-  initialState: {
-    players: [
-      { id: 1, score: 0, currentScore: 0, isActive: true },
-      { id: 2, score: 0, currentScore: 0, isActive: false },
-    ],
-    activePlayer: 0,
-    diceNumber: 0,
-    limit: 30,
-    isGameOver: false,
-  },
+  initialState,
   reducers: {
     rollDice(state) {
       state.diceNumber = Math.floor(Math.random() * 6) + 1;

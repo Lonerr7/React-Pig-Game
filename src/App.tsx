@@ -1,11 +1,11 @@
-import { useSelector } from 'react-redux';
 import './App.scss';
 import Controls from './components/Controls/Controls';
 import GameOver from './components/GameOver/GameOver';
 import Players from './components/Players/Players';
+import { useAppSelector } from './hooks/hooks';
 
-function App() {
-  const { isGameOver, activePlayer } = useSelector((state) => state.players);
+const App: React.FC = () => {
+  const { isGameOver, activePlayer } = useAppSelector((state) => state.players);
 
   return (
     <div className="App">
@@ -21,6 +21,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

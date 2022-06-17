@@ -1,6 +1,13 @@
 import s from './Player.module.scss';
 
-const Player = ({ id, score, currentScore, active }) => {
+type PlayerProps = {
+  currentScore: number;
+  id: number;
+  score: number;
+  active: boolean;
+};
+
+const Player: React.FC<PlayerProps> = ({ id, score, currentScore, active }) => {
   return (
     <div className={active ? `${s.player} ${s.active}` : s.player}>
       <h2 className={s.player__title}>Player {id}</h2>

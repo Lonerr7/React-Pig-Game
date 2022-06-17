@@ -1,11 +1,12 @@
 import s from './Controls.module.scss';
 import { rollDice } from '../../redux/playersSlice';
-import { useDispatch, useSelector } from 'react-redux';
 import { holdScore } from '../../redux/playersSlice';
 import NewGameBtn from '../common/NewGameBtn/NewGameBtn';
-const Controls = () => {
-  const dispatch = useDispatch();
-  const diceNumber = useSelector((state) => state.players.diceNumber);
+import { useAppDispatch, useAppSelector } from '../../hooks/hooks';
+
+const Controls: React.FC = () => {
+  const dispatch = useAppDispatch();
+  const diceNumber = useAppSelector((state) => state.players.diceNumber);
 
   return (
     <div className={s.controls}>
