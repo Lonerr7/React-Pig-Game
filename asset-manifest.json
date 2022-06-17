@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Pig-Game/static/css/main.77050dd0.css",
+    "main.js": "/React-Pig-Game/static/js/main.f0d68e74.js",
+    "index.html": "/React-Pig-Game/index.html",
+    "main.77050dd0.css.map": "/React-Pig-Game/static/css/main.77050dd0.css.map",
+    "main.f0d68e74.js.map": "/React-Pig-Game/static/js/main.f0d68e74.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77050dd0.css",
+    "static/js/main.f0d68e74.js"
+  ]
+}
