@@ -1,8 +1,8 @@
 import s from './Player.module.scss';
 
-const Player = ({ id, score, currentScore }) => {
+const Player = ({ id, score, currentScore, active }) => {
   return (
-    <div className={`${s.player} ${s.active}`}>
+    <div className={active ? `${s.player} ${s.active}` : s.player}>
       <h2 className={s.player__title}>Player {id}</h2>
       <p className={s.player__score}>{score}</p>
       <div className={s.player__currentScoreBox}>
