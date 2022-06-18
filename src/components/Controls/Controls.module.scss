@@ -10,6 +10,26 @@
   height: 600px;
   // justify-content: space-between;
 
+  &__topBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__group {
+    margin-top: 16px;
+  }
+
+  &__text {
+    font-size: 18px;
+  }
+
+  &__limitBtn {
+    display: block;
+    margin: 10px auto 0 auto;
+  }
+
   &__btn {
     padding: 12px 25px;
     color: #444;

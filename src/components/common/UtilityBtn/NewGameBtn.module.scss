@@ -1,4 +1,4 @@
-.newGameBtn {
+.utilityBtn {
   padding: 12px 25px;
   color: #444;
   border: none;
@@ -9,4 +9,10 @@
   transition: all 0.2s;
   backdrop-filter: blur(10px);
   border-radius: 50px;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

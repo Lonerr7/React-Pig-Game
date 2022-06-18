@@ -1,4 +1,4 @@
-type Player = {
+export type Player = {
   id: number;
   score: number;
   currentScore: number;
@@ -11,4 +11,12 @@ export type PlayersState = {
   diceNumber: number;
   limit: number;
   isGameOver: boolean;
+  isEditing: boolean;
+  diceRolls: number;
+};
+
+export type SettingsState = {
+  isOpened: boolean;
+  isInputVisible: boolean;
+  errorMessage: string;
 };

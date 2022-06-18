@@ -1,16 +1,18 @@
 import s from './Controls.module.scss';
-import { rollDice } from '../../redux/playersSlice';
+import { rollDice, startNewGame } from '../../redux/playersSlice';
 import { holdScore } from '../../redux/playersSlice';
-import NewGameBtn from '../common/NewGameBtn/NewGameBtn';
+import UtilityBtn from '../common/UtilityBtn/UtilityBtn';
 import { useAppDispatch, useAppSelector } from '../../hooks/hooks';
 
 const Controls: React.FC = () => {
   const dispatch = useAppDispatch();
-  const diceNumber = useAppSelector((state) => state.players.diceNumber);
+  const { diceNumber } = useAppSelector((state) => state.players);
 
   return (
     <div className={s.controls}>
-      <NewGameBtn />
+      <div className={s.controls__topBox}>
+        <UtilityBtn title="🔄 New Game" actionCreator={startNewGame} />
+      </div>
       {diceNumber ? (
         <img
           className={s.controls__dice}
