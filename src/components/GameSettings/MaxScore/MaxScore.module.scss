@@ -1,0 +1,52 @@
+.maxScore {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__title {
+    line-height: 20px;
+
+    span {
+      font-weight: 700;
+      margin-left: 15px;
+    }
+  }
+
+  &__btn {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__inputBox {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    max-width: 100px;
+    padding: 1px 8px;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+
+  &__inputBtn {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  &__errorMessage {
+    color: rgb(235, 28, 28);
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;
+  }
+}
