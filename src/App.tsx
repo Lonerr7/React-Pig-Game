@@ -15,11 +15,11 @@ const App: React.FC = () => {
   const diceRolls = useAppSelector((state) => state.players.diceRolls);
 
   return (
-    <div className={isSettingsOpen ? 'App blur' : 'App'}>
+    <div className="App">
       {!diceRolls ? (
         <UtilityBtn
           title="⚙ Settings"
-          classProp="absolute"
+          classProp={isSettingsOpen ? 'absolute active' : 'absolute'}
           actionCreator={openSettings}
         />
       ) : (

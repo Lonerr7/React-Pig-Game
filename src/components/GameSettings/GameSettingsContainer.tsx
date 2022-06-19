@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useAppDispatch, useAppSelector } from '../../hooks/hooks';
 import GameSettings from './GameSettings';
 import {
+  closeScoreInput,
   closeSettings,
   displayErrorMessage,
   openScoreInput,
@@ -10,7 +11,7 @@ import { changeMaxScore } from '../../redux/playersSlice';
 
 const GameSettingsContainer = () => {
   const dispatch = useAppDispatch();
-  const {isInputVisible, errorMessage} = useAppSelector(
+  const { isInputVisible, errorMessage } = useAppSelector(
     (state) => state.settings
   );
   const maxScore = useAppSelector((state) => state.players.limit);
@@ -33,6 +34,7 @@ const GameSettingsContainer = () => {
     try {
       if (newScore >= 1 && newScore <= 100) {
         dispatch(changeMaxScore(newScore));
+        dispatch(closeScoreInput());
       } else {
         throw new Error('Number must be in a range from 1 to 100!');
       }

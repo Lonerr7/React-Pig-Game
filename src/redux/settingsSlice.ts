@@ -21,6 +21,9 @@ const settingsSlice = createSlice({
     openScoreInput(state) {
       state.isInputVisible = true;
     },
+    closeScoreInput(state) {
+      state.isInputVisible = false;
+    },
     displayErrorMessage(state, action: PayloadAction<string>) {
       state.errorMessage = action.payload;
     },
@@ -32,5 +35,6 @@ export const {
   closeSettings,
   openScoreInput,
   displayErrorMessage,
+  closeScoreInput
 } = settingsSlice.actions;
 export default settingsSlice.reducer;

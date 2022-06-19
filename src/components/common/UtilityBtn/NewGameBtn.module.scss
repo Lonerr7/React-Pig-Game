@@ -1,3 +1,5 @@
+@import '../../../vars.scss';
+
 .utilityBtn {
   padding: 12px 25px;
   color: #444;
@@ -9,6 +11,10 @@
   transition: all 0.2s;
   backdrop-filter: blur(10px);
   border-radius: 50px;
+
+  &:hover {
+    @extend %btn-hover;
+  }
 }
 
 .absolute {
