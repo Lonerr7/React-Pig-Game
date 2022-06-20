@@ -9,13 +9,13 @@ type GameOverProps = {
 };
 
 const GameOver: React.FC<GameOverProps> = ({ activePlayer, players }) => {
-  const winner = activePlayer === 0 ? 2 : 1;
-  const winnerIdx = activePlayer === 0 ? 1 : 0;
+  const winner = activePlayer === 0 ? 1 : 0;
 
   return (
     <div className={s.gameOver}>
       <p className={s.gameOver__title}>
-        Game is Over! Player {winner} wins with score {players[winnerIdx].score}{' '}
+        Game is Over! {players[winner].name} wins with score{' '}
+        {players[winner].score}{' '}
       </p>
       <NewGameBtn title="🔄 New Game" actionCreator={startNewGame} />
     </div>

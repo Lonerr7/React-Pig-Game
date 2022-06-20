@@ -3,6 +3,7 @@ export type Player = {
   score: number;
   currentScore: number;
   isActive: boolean;
+  name: string;
 };
 
 export type PlayersState = {

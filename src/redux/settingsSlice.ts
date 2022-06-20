@@ -35,6 +35,6 @@ export const {
   closeSettings,
   openScoreInput,
   displayErrorMessage,
-  closeScoreInput
+  closeScoreInput,
 } = settingsSlice.actions;
 export default settingsSlice.reducer;

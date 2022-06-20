@@ -1,5 +1,6 @@
 import s from './GameSettings.module.scss';
 import MaxScore from './MaxScore/MaxScore';
+import PlayersSettingsContainer from './PlayersSettings/PlayersSettingsContainer';
 
 type GameSettingsProps = {
   classItem?: string;
@@ -40,6 +41,7 @@ const GameSettings: React.FC<GameSettingsProps> = ({
           errorMessage,
         }}
       />
+      <PlayersSettingsContainer />
     </div>
   );
 };

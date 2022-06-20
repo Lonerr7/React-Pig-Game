@@ -2,15 +2,20 @@ import s from './Player.module.scss';
 
 type PlayerProps = {
   currentScore: number;
-  id: number;
   score: number;
   active: boolean;
+  name: string;
 };
 
-const Player: React.FC<PlayerProps> = ({ id, score, currentScore, active }) => {
+const Player: React.FC<PlayerProps> = ({
+  score,
+  currentScore,
+  active,
+  name,
+}) => {
   return (
     <div className={active ? `${s.player} ${s.active}` : s.player}>
-      <h2 className={s.player__title}>Player {id}</h2>
+      <h2 className={s.player__title}>{name}</h2>
       <p className={s.player__score}>{score}</p>
       <div className={s.player__currentScoreBox}>
         <p className={s.player__currentScoreTitle}>current</p>

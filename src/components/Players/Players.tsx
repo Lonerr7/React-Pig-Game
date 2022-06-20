@@ -9,9 +9,9 @@ const Players: React.FC = () => {
     <Player
       key={p.id}
       currentScore={p.currentScore}
-      id={p.id}
       score={p.score}
       active={p.isActive}
+      name={p.name}
     />
   ));
 
