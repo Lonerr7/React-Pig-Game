@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/React-Pig-Game/static/css/main.1b9b36c3.css",
+    "main.css": "/React-Pig-Game/static/css/main.86446295.css",
     "main.js": "/React-Pig-Game/static/js/main.b4c61cd4.js",
     "index.html": "/React-Pig-Game/index.html",
-    "main.1b9b36c3.css.map": "/React-Pig-Game/static/css/main.1b9b36c3.css.map",
+    "main.86446295.css.map": "/React-Pig-Game/static/css/main.86446295.css.map",
     "main.b4c61cd4.js.map": "/React-Pig-Game/static/js/main.b4c61cd4.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b9b36c3.css",
+    "static/css/main.86446295.css",
     "static/js/main.b4c61cd4.js"
   ]
 }
