@@ -26,7 +26,6 @@ The game goes untill one of the players game score is equal or more the maximum 
 - ReactJs
 - Redux Toolkit
 - SASS(SCSS)
-- Redux-persist (localstorage)
 
 ## Link to the project
 
