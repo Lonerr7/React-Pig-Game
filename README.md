@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# React Pig Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository is a complete version of React Pig Game. This project was built to train React and Redux Toolkit. It has also a local storage interaction and filtration search letters.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Rules:
 
-### `npm start`
+The game requiries 2 players. It has 4 buttons: **NEW GAME**, **ROLL DICE**, **HOLD** and **SETTINGS**.  
+Each player has 2 scores:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Current Score**.
+2. **Game Score**.
+<!-- end of the list -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The game starts when you press the button **ROLL DICE**. For each roll of the dice you get **current score points**. You can roll the dice multiple times at your turn, but when the dice number becomes 1 - you loose all your score points you gain this turn and the turn goes to your opponent.  
+To secure your score you gain this turn you should press **HOLD** button. When you press it the **current score** converts into your **game score** and the turn passes to your opponent.  
+The game goes untill one of the players game score is equal or more the maximum score (which by default is 40 and can be changed in settings).  
+**NEW GAME** button starts a new game. It resets all players current score as well as their game scores.
+**SETTINGS** button opens a settings window where you can change **maximum game score**. The highest value it can take is 100. Also in settings you can change names of the players.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Used technologies:
 
-### `npm run build`
+- ReactJs
+- Redux Toolkit
+- SASS(SCSS)
+- Redux-persist (localstorage)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Link to the project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[React Pig Game](https://lonerr7.github.io/React-Pig-Game/ 'React Pig Game')
