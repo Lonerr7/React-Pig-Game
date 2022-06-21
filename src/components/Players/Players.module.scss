@@ -1,3 +1,16 @@
 .players {
   display: flex;
+  width: 1000px;
+}
+
+@media(max-width: 1040px) {
+  .players {
+    width: 800px;
+  }
+}
+
+@media(max-width: 830px) {
+  .players {
+    width: 700px;
+  }
 }

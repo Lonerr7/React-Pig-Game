@@ -54,3 +54,10 @@
     height: 114px;
   }
 }
+
+@media (max-width: 830px) {
+  .controls__btn {
+    padding: 9px 12px;
+    font-size: 16px;
+  }
+}
