@@ -13,7 +13,7 @@ Each player has 2 scores:
 2. **Game Score**.
 <!-- end of the list -->
 
-The game starts when you press the button **ROLL DICE**. For each roll of the dice you get **current score points**. You can roll the dice multiple times at your turn, but when the dice number becomes 1 - you loose all your score points you gain this turn and the turn goes to your opponent.  
+The game starts when you press the button **ROLL DICE**. For each roll of the dice you get **current score points**. You can roll the dice multiple times at your turn, but when the dice number becomes 1 - you loose all your score points you gained this turn and the turn goes to your opponent.  
 To secure your score you gain this turn you should press **HOLD** button. When you press it the **current score** converts into your **game score** and the turn passes to your opponent.  
 The game goes untill one of the players game score is equal or more the maximum score (which by default is 40 and can be changed in settings).  
 **NEW GAME** button starts a new game. It resets all players current score as well as their game scores.
